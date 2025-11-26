@@ -18,9 +18,8 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top">
         <div class="container">
-            <a class="navbar-brand d-flex align-items-center fw-semibold" href="#top">
-                <span class="logo-dot"></span>
-                AARecycler
+            <a class="navbar-brand d-flex align-items-center" href="#top">
+                <img src="assets/aarecyclerlogo.png" alt="AARecycler Logo" class="logo-img me-2">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -28,7 +27,7 @@
 
             <div class="collapse navbar-collapse" id="mainNavbar">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-lg-3">
-                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                   
                     <li class="nav-item">
                         <div class="dropdown">
                             <button class="btn dropdown-toggle nav-link" type="button" data-bs-toggle="dropdown"
@@ -36,19 +35,18 @@
                                 Products
                             </button>
                             <ul class="dropdown-menu dropdown-menu">
-                                <li><a class="dropdown-item active nav-link" href="#">Tallow</a></li>
-                                <li><a class="dropdown-item nav-link" href="#">Oil</a></li>
-                                <li><a class="dropdown-item nav-link" href="#">Solar Solution</a></li>
+                                <li><a class="dropdown-item active nav-link" href="tallow.html">Tallow</a></li>
+                                <li><a class="dropdown-item nav-link" href="oil.html">Oil</a></li>
+                                <li><a class="dropdown-item nav-link" href="solar-solution.html">Solar Solution</a></li>
                             </ul>
                         </div>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
 
                 <div class="d-flex gap-2">
                     <a href="#contact" class="btn btn-sm btn-aa-outline">Request a quote</a>
-                    <a href="#contact" class="btn btn-sm btn-aa-primary">Talk to our team</a>
                 </div>
             </div>
         </div>
@@ -74,47 +72,23 @@
                             cut energy costs, and improve sustainability.
                         </p>
 
-                        <div class="d-flex flex-wrap gap-2 mb-4">
-                            <a href="#contact" class="btn btn-aa-primary">Get a tallow / UCO pickup</a>
-                            <a href="#products" class="btn btn-aa-outline">View solar & energy products</a>
-                        </div>
-
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <h6 class="mb-1">Specialised collection & logistics</h6>
-                                <p class="text-muted small mb-0">
-                                    Safe, compliant collection of tallow and used cooking oil from abattoirs,
-                                    food manufacturers, and commercial kitchens.
-                                </p>
-                            </div>
-                            <div class="col-md-6">
-                                <h6 class="mb-1">Solar supply & installation</h6>
-                                <p class="text-muted small mb-0">
-                                    Quality solar panels and batteries with design, installation, and ongoing support.
-                                </p>
-                            </div>
-                        </div>
                     </div>
 
                     <!-- Hero Card -->
                     <div class="col-lg-5">
                         <div class="hero-card p-4">
-                            <h5 class="mb-2">At a glance</h5>
+                            <h5 class="mb-2 section-title">At a glance</h5>
                             <p class="small text-muted mb-3">
                                 One partner for high-value recycling streams and renewable energy systems across
                                 Victoria.
                             </p>
 
                             <div class="hero-stat-row">
-                                <span class="text-muted">Core streams</span>
+                                <span class="text-muted">What we offer</span>
                                 <span>Tallow • UCO • Solar • Batteries</span>
                             </div>
-                            <div class="hero-stat-row">
-                                <span class="text-muted">Ideal customers</span>
-                                <span>Abattoirs • Food plants • Hospitality • SMEs</span>
-                            </div>
                             <div class="hero-stat-row mb-3">
-                                <span class="text-muted">Service model</span>
+                                <span class="text-muted">Our services</span>
                                 <span>Collection • Supply • Install</span>
                             </div>
 
@@ -135,53 +109,56 @@
         <section id="contact" class="py-5">
             <div class="container">
                 <div class="hero-card p-4">
-                    <h3 class="hero-title text-center mb-3">
-                            Turning waste & sunlight into value.
-                        </h3>
+                    <h2 class="hero-title mb-5">
+                        Get in touch with AARecycler
+                    </h2>
+                    <hr>
 
                     <form class="row g-3">
+
+                        <div class="col-12">
+                            <label for="inputName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="Name" placeholder="Enter your full name"
+                                required>
+                        </div>
+
                         <div class="col-md-6">
                             <label for="inputEmail4" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="inputEmail4">
+                            <input type="email" class="form-control" id="inputEmail" placeholder="username@gmail.com"
+                                required>
                         </div>
                         <div class="col-md-6">
-                            <label for="inputPassword4" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="inputPassword4">
+                            <label for="inputPhone" class="form-label">Phone Number</label>
+                            <input type="text" class="form-control" id="PhoneNumber" placeholder="+61 1234578910"
+                                required>
                         </div>
+
                         <div class="col-12">
                             <label for="inputAddress" class="form-label">Address</label>
-                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                        </div>
-                        <div class="col-12">
-                            <label for="inputAddress2" class="form-label">Address 2</label>
-                            <input type="text" class="form-control" id="inputAddress2"
+                            <input type="text" class="form-control" id="inputAddress"
                                 placeholder="Apartment, studio, or floor">
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <label for="inputCity" class="form-label">City</label>
-                            <input type="text" class="form-control" id="inputCity">
+                            <input type="text" class="form-control" id="inputCity" placeholder="City" required>
                         </div>
                         <div class="col-md-4">
-                            <label for="inputState" class="form-label">State</label>
-                            <select id="inputState" class="form-select">
-                                <option selected>Choose...</option>
-                                <option>...</option>
-                            </select>
+                            <label for="inputstate" class="form-label">State</label>
+                            <input type="text" class="form-control" id="inputState" placeholder="State" required>
                         </div>
-                        <div class="col-md-2">
-                            <label for="inputZip" class="form-label">Zip</label>
-                            <input type="text" class="form-control" id="inputZip">
+                        <div class="col-md-4">
+                            <label for="inputPostcode" class="form-label">Postcode</label>
+                            <input type="text" class="form-control" id="inputPostcode" placeholder="Postcode" required>
                         </div>
                         <div class="col-12">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="gridCheck">
-                                <label class="form-check-label" for="gridCheck">
-                                    Check me out
-                                </label>
+                            <label for="floatingTextarea2">Comments</label>
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                                    style="height: 100px"></textarea>
                             </div>
                         </div>
                         <div class="col-12">
-                            <button type="submit" class="btn btn-primary">Sign in</button>
+                            <button type="submit" class="btn btn-primary">Submit</button>
                         </div>
                     </form>
 
@@ -189,16 +166,10 @@
             </div>
         </section>
 
-        <!-- Services -->
-        <section id="services" class="py-5">
-
-        </section>
-
         <!-- Products: Tallow, Oil, Solar Panels & Batteries -->
         <section id="products" class="py-5">
             <div class="container">
                 <div class="text-center mb-5">
-                    <p class="section-kicker mb-1">Products</p>
                     <h2 class="section-title h3 mb-2">Recycling & Renewable Energy Products</h2>
                     <p class="section-subtitle mx-auto" style="max-width: 650px;">
                         We support both circular economy and clean energy outcomes with reliable
@@ -211,78 +182,100 @@
 
                     <!-- Tallow -->
                     <div class="col-md-6 col-lg-3">
-                        <div class="card card-aa h-100 p-3">
-                            <h5 class="mb-2">Tallow</h5>
-                            <p class="small text-muted">
-                                Collected tallow is aggregated and prepared for refining, oleochemical,
-                                and renewable fuel applications.
-                            </p>
-                            <ul class="small text-muted mb-0">
-                                <li>• Consistent quality streams</li>
-                                <li>• Suitable for biodiesel & industrial use</li>
-                                <li>• Bulk volumes available</li>
-                            </ul>
-                        </div>
+                        <a href="tallow.html" class="text-decoration-none text-dark">
+                            <div class="card card-aa h-100 p-3 text-center clickable-card">
+                                <div class="product-img">
+                                    <img src="assets/tallow.jpg" alt="Tallow">
+                                </div>
+                                <h5 class="mb-2 mt-3">Tallow</h5>
+                                <p class="small text-muted">
+                                    Collected tallow is aggregated and prepared for refining, oleochemical,
+                                    and renewable fuel applications.
+                                </p>
+                                <ul class="small text-muted mb-0 text-start">
+                                    <li>Consistent quality streams</li>
+                                    <li>Suitable for biodiesel & industrial use</li>
+                                    <li>Bulk volumes available</li>
+                                </ul>
+                            </div>
+                        </a>
                     </div>
 
                     <!-- Used Cooking Oil -->
                     <div class="col-md-6 col-lg-3">
-                        <div class="card card-aa h-100 p-3">
-                            <h5 class="mb-2">Used Cooking Oil (UCO)</h5>
-                            <p class="small text-muted">
-                                UCO is collected, stored, and supplied as a feedstock for renewable fuels
-                                and other industrial processes.
-                            </p>
-                            <ul class="small text-muted mb-0">
-                                <li>• Food-grade collection equipment</li>
-                                <li>• Traceable supply chain</li>
-                                <li>• Biofuel-ready material</li>
-                            </ul>
-                        </div>
+                        <a href="oil.html" class="text-decoration-none text-dark">
+                            <div class="card card-aa h-100 p-3 text-center clickable-card">
+                                <div class="product-img">
+                                    <img src="assets/oil.jpg" alt="Used Cooking Oil">
+                                </div>
+                                <h5 class="mb-2 mt-3">Used Cooking Oil (UCO)</h5>
+                                <p class="small text-muted">
+                                    UCO is collected, stored, and supplied as a feedstock for renewable fuels
+                                    and other industrial processes.
+                                </p>
+                                <ul class="small text-muted mb-0 text-start">
+                                    <li>Food-grade collection equipment</li>
+                                    <li>Traceable supply chain</li>
+                                    <li>Biofuel-ready material</li>
+                                </ul>
+                            </div>
+                        </a>
                     </div>
 
                     <!-- Solar Panels -->
                     <div class="col-md-6 col-lg-3">
-                        <div class="card card-aa h-100 p-3">
-                            <h5 class="mb-2">Solar Panels</h5>
-                            <p class="small text-muted">
-                                High-efficiency solar modules suitable for residential roofs, warehouses,
-                                factories, and small commercial sites.
-                            </p>
-                            <ul class="small text-muted mb-0">
-                                <li>• Tier-1 panel brands</li>
-                                <li>• System design options</li>
-                                <li>• Warranty and performance support</li>
-                            </ul>
-                        </div>
+                        <a href="solar-solution.html" class="text-decoration-none text-dark">
+                            <div class="card card-aa h-100 p-3 text-center clickable-card">
+                                <div class="product-img">
+                                    <img src="assets/solar panel.jpg" alt="Solar Panels">
+                                </div>
+                                <h5 class="mb-2 mt-3">Solar Panels</h5>
+                                <p class="small text-muted">
+                                    High-efficiency solar modules suitable for residential roofs, warehouses,
+                                    factories, and small commercial sites.
+                                </p>
+                                <ul class="small text-muted mb-0 text-start">
+                                    <li>Tier-1 panel brands</li>
+                                    <li>System design options</li>
+                                    <li>Warranty and performance support</li>
+                                </ul>
+                            </div>
+                        </a>
                     </div>
 
                     <!-- Solar Batteries -->
                     <div class="col-md-6 col-lg-3">
-                        <div class="card card-aa h-100 p-3">
-                            <h5 class="mb-2">Solar Batteries</h5>
-                            <p class="small text-muted">
-                                Lithium and hybrid battery systems that store excess solar and provide
-                                backup during peak pricing or outages.
-                            </p>
-                            <ul class="small text-muted mb-0">
-                                <li>• Scalable storage sizes</li>
-                                <li>• Hybrid & off-grid ready</li>
-                                <li>• Compatible with major inverters</li>
-                            </ul>
-                        </div>
+                        <a href="solar-solution.html" class="text-decoration-none text-dark">
+                            <div class="card card-aa h-100 p-3 text-center clickable-card">
+                                <div class="product-img">
+                                    <img src="assets/solar-battery.jpg" alt="Solar Batteries">
+                                </div>
+                                <h5 class="mb-2 mt-3">Solar Batteries</h5>
+                                <p class="small text-muted">
+                                    Lithium and hybrid battery systems that store excess solar and provide
+                                    backup during peak pricing or outages.
+                                </p>
+                                <ul class="small text-muted mb-0 text-start">
+                                    <li>Scalable storage sizes</li>
+                                    <li>Hybrid & off-grid ready</li>
+                                    <li>Compatible with major inverters</li>
+                                </ul>
+                            </div>
+                        </a>
                     </div>
 
                 </div>
             </div>
         </section>
 
+
+
+
         <!-- About -->
         <section id="about" class="py-5 bg-white">
             <div class="container">
                 <div class="row g-4 align-items-center">
                     <div class="col-lg-6">
-                        <p class="section-kicker mb-1">About Us</p>
                         <h2 class="section-title h3 mb-2">A Circular & Clean Energy Partner</h2>
 
                         <p class="text-muted mb-3">
@@ -301,8 +294,7 @@
 
                     <div class="col-lg-6">
                         <div class="ratio ratio-16x9 rounded-3 overflow-hidden border">
-                            <img src="https://via.placeholder.com/800x450?text=Tallow+Oil+Solar+Operations"
-                                alt="AARecycler operations" />
+                            <img src="assets/wind-turbine.jpg" alt="AARecycler operations" />
                         </div>
                     </div>
                 </div>
@@ -318,9 +310,8 @@
         <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
             <p class="mb-0 small">© 2025 AARecycler. All rights reserved.</p>
             <div class="footer-links d-flex gap-3 small">
-                <a href="#services">Services</a>
                 <a href="#products">Products</a>
-                <a href="#about">About</a>
+                <a href="about.html">About</a>
                 <a href="#contact">Contact</a>
             </div>
         </div>
